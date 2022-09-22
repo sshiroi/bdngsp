@@ -1,0 +1,18 @@
+[package]
+name = "bdngsp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+byteorder = "1.4.3"
+bitreader = "0.3.6"
+ffmpeg-sys = { version = "4.3.3" }#, features = ["build"] }
+simple-error = "0.2.3"
+anyhow = "1.0.64"
+vapoursynth = { version = "0.4.0", features = [  ] }
+
+[lib]
+name = "bdngsp"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
